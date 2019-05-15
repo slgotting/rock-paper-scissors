@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<script>
+
+function playRound (playerSelection, computerSelection) {
+    playerSelection = playerSelection.toLowerCase();
+    computerSelection = computerSelection.toLowerCase();
+    const CHOICES = ['rock','paper','scissors'];
+    
+    if (!CHOICES.includes(playerSelection) || !CHOICES.includes(computerSelection)) {
+        alert('Please type your choices with correct spelling')
+    } else {
+
+        let winning_rels = {'rock':'scissors', 'paper': 'rock', 'scissors': 'paper'}
+        if (winning_rels[playerSelection] == computerSelection) {
+            return 'You won!'
+        } else if (winning_rels[computerSelection] == playerSelection) {
+            return 'Sorry, you suc...whoops, I meant to say you lost :P'
+        } else {
+            return 'Its a draw!'
+        }
+    }
+}
+
+
+console.log(playRound('rock','scissors'))
+
+</script>
+
+
+
+
+
+
+</html>
