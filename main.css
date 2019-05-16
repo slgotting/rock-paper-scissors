@@ -112,7 +112,7 @@ select {
     cursor: default;
 }
 
-.inc-score, #winner-block, #draw-event {
+.inc-score, #winner-block, #tie-event {
     visibility:hidden;
 }
 
